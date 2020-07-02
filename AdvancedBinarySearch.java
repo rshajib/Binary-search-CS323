@@ -10,7 +10,7 @@ public class AdvancedBinarySearch {
 		   
 		    while( r - l > 1 ) 
 		    {  
-		    	count++;
+		    	//count++;
 		        m = l + (r-l)/2; 
 		        
 		        
@@ -18,12 +18,12 @@ public class AdvancedBinarySearch {
 		  
 		        if( arr[m] <= x ) {
 		            l = m; 
-		            //count++;
+		            count++;
 		        }
 		        else
 		        {
 		            r = m; 
-		           // count++;
+		            count++;
 		        }
 		    } 
 		  
@@ -32,6 +32,9 @@ public class AdvancedBinarySearch {
 		    	count++;
 		        return l; 
 		       
+		    }
+		    else {
+		    	count++;
 		    }
 		    
 		    
