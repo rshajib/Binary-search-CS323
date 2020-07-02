@@ -6,14 +6,15 @@ public class BinarySearchLecture {
 	
 	int BinarySearchLecture(int arr[], int l, int r, int x) {
 	   if (r >= l) { 
-		   count++;
+		 
 	      int mid = l + (r - l) / 2; 
-	          
+	        
 	      if (arr[mid] == x) 
 	      {
-	         count++;
+	         //count++;
 	         return mid; 
 	      }
+	      count++;
 	      if (arr[mid] > x) 
 	      {  
 	    	 count++; 
